@@ -1,10 +1,26 @@
 import PrinceAnimation from '@/app/assets/images/PrinceAnimation.gif';
 import ArrowDown from '@/app/assets/icons/arrow-down.svg';
+import grainImage from '@/app/assets/images/grain.jpg';
 import Image from 'next/image';
 
 export const HeroSection = () => {
   return (
-    <div className="py-32 md:py-48 lg:py-60">
+    <div className="py-32 md:py-48 lg:py-60 relative z- overflow-x-clip">
+      {/* Grain texture Image */}
+      <div
+        className="absolute inset-0 -z-30 opacity-5"
+        style={{
+          backgroundImage: `url(${grainImage.src})`,
+        }}
+      ></div>
+
+      {/* Emerald colored rings */}
+      <div className="size-[620px] hero-ring" />
+      <div className="size-[820px] hero-ring" />
+      <div className="size-[1020px] hero-ring" />
+      <div className="size-[1220px] hero-ring" />
+
+      {/* Actual content */}
       <div className="container">
         <div className="flex flex-col items-center gap-2">
           <Image src={PrinceAnimation} className="size-[100px]" alt="A person enjoying his music in earphones" />
