@@ -8,7 +8,7 @@ import { HeroOrbit } from '../components/HeroOrbit';
 
 export const HeroSection = () => {
   return (
-    <div className="py-32 md:py-48 lg:py-60 relative z- overflow-x-clip">
+    <div className="py-32 md:py-48 lg:py-60 relative overflow-x-clip">
       {/* Whole Background */}
       <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
         {/* Grain texture Effect */}
@@ -63,7 +63,11 @@ export const HeroSection = () => {
       {/* Actual content */}
       <div className="container">
         <div className="flex flex-col items-center gap-2">
-          <Image src={PrinceAnimation} className="size-[100px]" alt="A person enjoying his music in earphones" />
+          <Image
+            src={PrinceAnimation}
+            className="size-[100px] md:size-28 lg:size-32"
+            alt="A person enjoying his music in earphones"
+          />
           <div className="bg-gray-950 border border-gray-800 px-4 py-1.5 flex items-center gap-4 rounded-lg">
             <div className="bg-green-500 size-2.5 rounded-full"></div>
             <div className="text-sm font-medium">Available for new projects</div>
