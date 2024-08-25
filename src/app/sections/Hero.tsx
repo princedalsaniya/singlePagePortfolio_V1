@@ -1,6 +1,7 @@
 import PrinceAnimation from '@/app/assets/images/PrinceAnimation.gif';
 import ArrowDown from '@/app/assets/icons/arrow-down.svg';
 import grainImage from '@/app/assets/images/grain.jpg';
+import StarIcon from '@/app/assets/icons/star.svg';
 import Image from 'next/image';
 
 export const HeroSection = () => {
@@ -19,6 +20,13 @@ export const HeroSection = () => {
       <div className="size-[820px] hero-ring" />
       <div className="size-[1020px] hero-ring" />
       <div className="size-[1220px] hero-ring" />
+      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 ">
+        <div className="border border-red-500 size-[835px] animate-spin [animation-duration:30s]">
+          <div className="border border-red-500 inline-flex animate-spin [animation-duration:5s]">
+            <StarIcon className="size-28 text-emerald-300" />
+          </div>
+        </div>
+      </div>
 
       {/* Actual content */}
       <div className="container">
