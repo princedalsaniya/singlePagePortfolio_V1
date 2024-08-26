@@ -90,32 +90,36 @@ export const AboutSection = () => {
         />
 
         <div className="mt-20 flex flex-col gap-8">
-          {/* Quote Card */}
-          <Card className="h-[320px]">
-            <div className="flex flex-col">
-              <CardHeader
-                title="Progress over Perfection"
-                description="Focus on continuous growth, not flawless outcomes."
-              />
-              <div className="w-40 mx-auto mt-8">
-                <Image src={progressOverPerfection} alt="Progress over Perfection Image" />
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
+            {/* Quote Card */}
+            <Card className="h-[320px] md:col-span-2">
+              <div className="flex flex-col">
+                <CardHeader title="Motivation" description="Focus on continuous growth, not flawless outcomes." />
+                <div className="w-40 mx-auto">
+                  <Image
+                    src={progressOverPerfection}
+                    alt="Progress over Perfection Image"
+                    className="rounded-tl-lg rounded-tr-lg"
+                  />
+                </div>
               </div>
-            </div>
-          </Card>
-          {/* Technologies Card */}
-          <Card className="h-[320px] p-0">
-            <CardHeader
-              title="My Toolbox"
-              description="Explore the technologies and Tools I use to craft exceptional digital experiences."
-              className="px-6 pt-6"
-            />
-            <div>
-              <ToolBoxItems items={toolboxItems} className="mt-6" />
-              <ToolBoxItems items={toolboxItems} className="mt-6" itemsWrapperClassName="-translate-x-1/2" />
-            </div>
-          </Card>
+            </Card>
+            {/* Technologies Card */}
+            <Card className="h-[320px] md:col-span-3">
+              <CardHeader
+                title="My Toolbox"
+                description="Explore the technologies and Tools I use to craft exceptional digital experiences."
+                className="px-6 pt-6"
+              />
+              <div>
+                <ToolBoxItems items={toolboxItems} />
+                <ToolBoxItems items={toolboxItems} className="mt-6" itemsWrapperClassName="-translate-x-1/2" />
+              </div>
+            </Card>
+          </div>
+
           {/* Beyond The Code Card */}
-          <Card className="h-[320px] p-0 flex flex-col">
+          <Card className="h-[320px] flex flex-col">
             <CardHeader
               title="Beyond the Code"
               description="Explore my interests and hobbies beyond the digital realm."
@@ -135,7 +139,7 @@ export const AboutSection = () => {
             </div>
           </Card>
           {/* Location Card */}
-          <Card className="h-[320px] p-0 relative">
+          <Card className="h-[320px] relative">
             <Image src={rajkotOnMaps} alt="Rajkot, Gujarat." className="h-full w-full object-cover" />
             <div className="absolute top-[35%] left-[15%] -translate-x-[15%] -translate-y-[35%] size-12 rounded-full bg-gradient-to-r from-emerald-300 to-sky-400 after:content-[''] after:absolute after:inset-0 after:outline after:outline-2 after:-outline-offset-2 after:rounded-full after:outline-gray-950/30">
               <Image src={smileMemoji} alt="Smiling Memoji" className="" />
