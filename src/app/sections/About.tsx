@@ -118,33 +118,35 @@ export const AboutSection = () => {
             </Card>
           </div>
 
-          {/* Beyond The Code Card */}
-          <Card className="h-[320px] flex flex-col">
-            <CardHeader
-              title="Beyond the Code"
-              description="Explore my interests and hobbies beyond the digital realm."
-              className="px-6 py-6"
-            />
-            <div className="relative flex-1">
-              {hobbies.map((hobby) => (
-                <div
-                  key={hobby.title}
-                  className="inline-flex items-center gap-2 px-6 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1.5 absolute"
-                  style={{ left: hobby.left, top: hobby.top }}
-                >
-                  <span className="font-medium text-gray-950">{hobby.title}</span>
-                  <span>{hobby.emoji}</span>
-                </div>
-              ))}
-            </div>
-          </Card>
-          {/* Location Card */}
-          <Card className="h-[320px] relative">
-            <Image src={rajkotOnMaps} alt="Rajkot, Gujarat." className="h-full w-full object-cover" />
-            <div className="absolute top-[35%] left-[15%] -translate-x-[15%] -translate-y-[35%] size-12 rounded-full bg-gradient-to-r from-emerald-300 to-sky-400 after:content-[''] after:absolute after:inset-0 after:outline after:outline-2 after:-outline-offset-2 after:rounded-full after:outline-gray-950/30">
-              <Image src={smileMemoji} alt="Smiling Memoji" className="" />
-            </div>
-          </Card>
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
+            {/* Beyond The Code Card */}
+            <Card className="h-[320px] flex flex-col md:col-span-3">
+              <CardHeader
+                title="Beyond the Code"
+                description="Explore my interests and hobbies beyond the digital realm."
+                className="px-6 py-6"
+              />
+              <div className="relative flex-1">
+                {hobbies.map((hobby) => (
+                  <div
+                    key={hobby.title}
+                    className="inline-flex items-center gap-2 px-6 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1.5 absolute"
+                    style={{ left: hobby.left, top: hobby.top }}
+                  >
+                    <span className="font-medium text-gray-950">{hobby.title}</span>
+                    <span>{hobby.emoji}</span>
+                  </div>
+                ))}
+              </div>
+            </Card>
+            {/* Location Card */}
+            <Card className="h-[320px] relative md:col-span-2">
+              <Image src={rajkotOnMaps} alt="Rajkot, Gujarat." className="h-full w-full object-cover" />
+              <div className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] size-12 rounded-full bg-gradient-to-r from-emerald-300 to-sky-400 after:content-[''] after:absolute after:inset-0 after:outline after:outline-2 after:-outline-offset-2 after:rounded-full after:outline-gray-950/30">
+                <Image src={smileMemoji} alt="Smiling Memoji" className="" />
+              </div>
+            </Card>
+          </div>
         </div>
       </div>
     </div>
