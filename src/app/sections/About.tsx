@@ -134,9 +134,12 @@ export const AboutSection = () => {
               ))}
             </div>
           </Card>
-          <Card>
-            <Image src={rajkotOnMaps} alt="Rajkot, Gujarat." />
-            <Image src={smileMemoji} alt="Smiling Memoji" />
+          {/* Location Card */}
+          <Card className="h-[320px] p-0 relative">
+            <Image src={rajkotOnMaps} alt="Rajkot, Gujarat." className="h-full w-full object-cover" />
+            <div className="absolute top-[35%] left-[15%] -translate-x-[15%] -translate-y-[35%] size-12 rounded-full bg-gradient-to-r from-emerald-300 to-sky-400 after:content-[''] after:absolute after:inset-0 after:outline after:outline-2 after:-outline-offset-2 after:rounded-full after:outline-gray-950/30">
+              <Image src={smileMemoji} alt="Smiling Memoji" className="" />
+            </div>
           </Card>
         </div>
       </div>
