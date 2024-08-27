@@ -57,8 +57,14 @@ export const ProjectsSection = () => {
           description="See how I transformed Figma designs into engaging digital experiences."
         />
         <div className="flex flex-col mt-10 gap-20 md:mt-20">
-          {portfolioProjects.map((project) => (
-            <Card className="px-8 pt-8 pb-0 md:pt-12 md:px-10 lg:px-20 lg:pt-16" key={project.title}>
+          {portfolioProjects.map((project, projectIndex) => (
+            <Card
+              style={{
+                top: `calc(64px + ${projectIndex * 40})`,
+              }}
+              className="px-8 pt-8 pb-0 md:pt-12 md:px-10 lg:px-20 lg:pt-16 sticky"
+              key={project.title}
+            >
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                 <div className="lg:pb-16">
                   <div className="bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text inline-flex uppercase tracking-widest font-bold text-sm gap-2">
