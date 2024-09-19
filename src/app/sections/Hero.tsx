@@ -76,9 +76,10 @@ export const HeroSection = () => {
           </div>
         </div>
         <div className="max-w-lg mx-auto">
-          <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">
+          <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">Prince Dalsaniya</h1>
+          <h3 className="text-lg md:text-2xl text-center mt-8 tracking-wide">
             Translate Designs to Real Websites
-          </h1>
+          </h3>
           <p className="mt-4 text-center text-white/60 md:text-lg">
             I specialize in translating the designs into functional, high-performing webpages. Let's discuss your
             next project.
