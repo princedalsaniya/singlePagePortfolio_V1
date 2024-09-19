@@ -40,7 +40,7 @@ export const ProjectsSection = () => {
         <SectionHeader
           eyebrow="Impactful Projects"
           title="Professional Experience & Achievements"
-          description="Explore my significant contributions at my current role and open-source projects."
+          description="With over 2.5 years of experience, explore my significant contributions in my current role and open-source projects."
         />
 
         <div className="flex flex-col mt-10 gap-20 md:mt-20">
