@@ -8,7 +8,7 @@ import { HeroOrbit } from '../components/HeroOrbit';
 
 export const HeroSection = () => {
   return (
-    <div className="py-32 md:py-48 lg:py-60 relative overflow-x-clip">
+    <div className="py-32 md:py-48 lg:py-60 relative overflow-x-clip" id="home">
       {/* Whole Background */}
       <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
         {/* Grain texture Effect */}
