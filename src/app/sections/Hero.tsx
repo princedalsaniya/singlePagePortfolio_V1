@@ -8,7 +8,7 @@ import { HeroOrbit } from '../components/HeroOrbit';
 
 export const HeroSection = () => {
   return (
-    <div className="py-32 md:py-48 lg:py-60 relative overflow-x-clip">
+    <div className="py-32 md:py-48 lg:py-60 relative overflow-x-clip" id="home">
       {/* Whole Background */}
       <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
         {/* Grain texture Effect */}
@@ -61,7 +61,7 @@ export const HeroSection = () => {
       </div>
 
       {/* Actual content */}
-      <div className="container">
+      <div className="container relative">
         <div className="flex flex-col items-center gap-2">
           <Image
             src={PrinceAnimation}
@@ -85,14 +85,18 @@ export const HeroSection = () => {
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-          <button className="inline-flex items-center gap-2 border border-white/15 rounded-xl px-6 h-12">
-            <span className="font-semibold">Explore My Work</span>
-            <ArrowDown className="size-4" />
-          </button>
-          <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-xl">
-            <span>👋🏻</span>
-            <span className="font-semibold ">Let's Connect</span>
-          </button>
+          <a href="/PrinceResume.pdf" download>
+            <button className="inline-flex items-center gap-2 border border-white/15 rounded-xl px-6 h-12 cursor-pointer hover:bg-white hover:text-gray-900">
+              <span className="font-semibold">Get My Resume</span>
+              <ArrowDown className="size-4" />
+            </button>
+          </a>
+          <a href="mailto:pdalsaniya1@gmail.com">
+            <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-xl cursor-pointer hover:bg-transparent hover:text-white">
+              <span>👋🏻</span>
+              <span className="font-semibold ">Let's Connect</span>
+            </button>
+          </a>
         </div>
       </div>
     </div>

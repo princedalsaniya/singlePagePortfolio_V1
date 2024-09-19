@@ -3,7 +3,8 @@ import { Card } from '../components/Card';
 import progressOverPerfection from '@/app/assets/images/progressOverPerfection.jpeg';
 import rajkotOnMaps from '@/app/assets/images/rajkotOnMaps.png';
 import smileMemoji from '@/app/assets/images/memoji-smile.png';
-import ChromeIcon from '@/app/assets/icons/chrome.svg';
+import TailwindIcon from '@/app/assets/icons/tailwind.svg';
+import AngularIcon from '@/app/assets/icons/angular.svg';
 import CSSIcon from '@/app/assets/icons/css3.svg';
 import GithubIcon from '@/app/assets/icons/github.svg';
 import HTMLIcon from '@/app/assets/icons/html5.svg';
@@ -34,8 +35,12 @@ const toolboxItems = [
     iconType: ReactIcon,
   },
   {
-    title: 'Chrome',
-    iconType: ChromeIcon,
+    title: 'Angular',
+    iconType: AngularIcon,
+  },
+  {
+    title: 'Tailwind',
+    iconType: TailwindIcon,
   },
   {
     title: 'Github',
@@ -85,7 +90,7 @@ const hobbies = [
 export const AboutSection = () => {
   const containerRef = useRef(null);
   return (
-    <div className="py-20 lg:py-28">
+    <div className="py-20 lg:py-28" id="about">
       <div className="container">
         <SectionHeader
           eyebrow="About Me"
@@ -155,11 +160,13 @@ export const AboutSection = () => {
             {/* Location Card */}
             <Card className="h-[320px] relative md:col-span-2 lg:col-span-1">
               <Image src={rajkotOnMaps} alt="Rajkot, Gujarat." className="h-full w-full object-cover" />
-              <div className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] size-12 rounded-full after:content-[''] after:absolute after:inset-0 after:outline after:outline-2 after:-outline-offset-2 after:rounded-full after:outline-gray-950/30">
-                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-emerald-300 to-sky-400 -z-20 animate-ping [animation-duration:2s]"></div>
-                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-emerald-300 to-sky-400 -z-10"></div>
-                <Image src={smileMemoji} alt="Smiling Memoji" className="" />
-              </div>
+              <a href="https://maps.app.goo.gl/a1kWnS5taazD48n29" target="_blank">
+                <div className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] size-12 rounded-full after:content-[''] after:absolute after:inset-0 after:outline after:outline-2 after:-outline-offset-2 after:rounded-full after:outline-gray-950/30">
+                  <div className="absolute inset-0 rounded-full bg-gradient-to-r from-emerald-300 to-sky-400 -z-20 animate-ping [animation-duration:2s]"></div>
+                  <div className="absolute inset-0 rounded-full bg-gradient-to-r from-emerald-300 to-sky-400 -z-10"></div>
+                  <Image src={smileMemoji} alt="Smiling Memoji" className="" />
+                </div>
+              </a>
             </Card>
           </div>
         </div>
