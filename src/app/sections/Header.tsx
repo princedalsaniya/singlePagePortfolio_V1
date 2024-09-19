@@ -34,7 +34,7 @@ export const Header = () => {
           Home
         </a>
         <a className={`nav-item ${activeSection === 'projects' ? 'bg-white text-gray-900' : ''}`} href="#projects">
-          Projects
+          Experience
         </a>
         <a className={`nav-item ${activeSection === 'about' ? 'bg-white text-gray-900' : ''}`} href="#about">
           About
