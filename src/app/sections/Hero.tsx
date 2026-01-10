@@ -72,30 +72,35 @@ export const HeroSection = () => {
             <div className="bg-green-500 size-2.5 rounded-full relative">
               <div className="absolute bg-green-500 inset-0 rounded-full animate-ping-large"></div>
             </div>
-            <div className="text-sm font-medium">Available for new projects</div>
+            <div className="text-sm font-medium">Open to opportunities</div>
           </div>
         </div>
         <div className="max-w-lg mx-auto">
           <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">Prince Dalsaniya</h1>
           <h3 className="text-lg md:text-2xl text-center mt-8 tracking-wide">
-            Translate Designs to Real Websites
+            Full-Stack Engineer • Production Platforms • React + Next.js + Node.js
           </h3>
           <p className="mt-4 text-center text-white/60 md:text-lg">
-            I specialize in translating the designs into functional, high-performing webpages. Let's discuss your
-            next project.
+            I build production-grade platforms and tools. Currently working on educational game platforms serving K-8 students in US schools. Previously built Web3 browser extensions and AI-powered automation tools.
+          </p>
+          <p className="mt-4 text-center text-white/60 md:text-lg">
+            <strong className="text-white/80">Strong in:</strong> Rapid shipping, frontend architecture, backend integrations, and owning features end-to-end.
+          </p>
+          <p className="mt-3 text-center text-white/60 text-sm md:text-base">
+            <strong className="text-white/80">Tech:</strong> React • Next.js • TypeScript • Node.js • GraphQL • FastAPI
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-          <a href="/PrinceResume.pdf" download>
+          <a href="#work">
             <button className="inline-flex items-center gap-2 border border-white/15 rounded-xl px-6 h-12 cursor-pointer hover:bg-white hover:text-gray-900">
-              <span className="font-semibold">Get My Resume</span>
+              <span className="font-semibold">View Work</span>
               <ArrowDown className="size-4" />
             </button>
           </a>
-          <a href="mailto:pdalsaniya1@gmail.com">
+          <a href="#contact">
             <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-xl cursor-pointer hover:bg-transparent hover:text-white">
               <span>👋🏻</span>
-              <span className="font-semibold ">Let's Connect</span>
+              <span className="font-semibold">Get in Touch</span>
             </button>
           </a>
         </div>
