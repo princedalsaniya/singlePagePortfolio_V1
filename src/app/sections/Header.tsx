@@ -6,7 +6,7 @@ export const Header = () => {
 
   // Function to update active section when scrolling
   const handleScroll = () => {
-    const sections = ['home', 'projects', 'about', 'contact'];
+    const sections = ['home', 'work', 'about', 'contact'];
 
     sections.forEach((section) => {
       const element = document.getElementById(section);
@@ -33,8 +33,8 @@ export const Header = () => {
         <a className={`nav-item ${activeSection === 'home' ? 'bg-white text-gray-900' : ''}`} href="#home">
           Home
         </a>
-        <a className={`nav-item ${activeSection === 'projects' ? 'bg-white text-gray-900' : ''}`} href="#projects">
-          Experience
+        <a className={`nav-item ${activeSection === 'work' ? 'bg-white text-gray-900' : ''}`} href="#work">
+          Work
         </a>
         <a className={`nav-item ${activeSection === 'about' ? 'bg-white text-gray-900' : ''}`} href="#about">
           About
